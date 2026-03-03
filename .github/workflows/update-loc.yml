@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.MY_ADMIN_TOKEN }} 
           fetch-depth: 0
@@ -34,6 +34,6 @@ jobs:
           mkdir -p doc
           git add doc/loc-badge.svg
           
-          git commit -m "chore: update lines of code badge" || exit 0
+          git commit -m "chore: update lines of code badge [skip ci]"
           
           git push
