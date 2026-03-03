@@ -1,0 +1,1 @@
+![Lines of Code](./doc/loc-badge.svg)
